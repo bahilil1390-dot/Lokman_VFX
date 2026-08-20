@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lokman_VFX</title>
+<meta name="description" content="VFX artist portfolio and shot reel.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <div class="nav__mark">YOUR<span class="nav__mark-accent">NAME</span></div>
+  <nav class="nav__links">
+    <a href="#reel">Reel</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero__tc" aria-hidden="true">
+      <span class="tc-label">TIMECODE</span>
+      <span class="tc-value" id="liveTimecode">00:00:00:00</span>
+    </div>
+    <h1 class="hero__title">
+      <span class="hero__title-line">VISUAL</span>
+      <span class="hero__title-line hero__title-line--accent">EFFECTS</span>
+      <span class="hero__title-line">ARTIST</span>
+    </h1>
+    <p class="hero__sub">Compositing &amp; simulation work — shot breakdowns below.</p>
+    <a href="#reel" class="hero__scroll">
+      <span>View reel</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <section class="reel" id="reel">
+    <div class="section__head">
+      <span class="eyebrow">01 / SELECTED WORK</span>
+      <h2>Shot Reel</h2>
+    </div>
+    <div class="grid" id="videoGrid"><!-- injected by script.js --></div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section__head">
+      <span class="eyebrow">02 / ABOUT</span>
+      <h2>Behind the shots</h2>
+    </div>
+    <div class="about__body">
+      <p>
+        Write a short paragraph here about who you are, what software you work in
+        (Houdini, Nuke, After Effects, Blender, Unreal...), and what kind of VFX
+        work you specialize in — simulation, compositing, tracking, motion graphics.
+      </p>
+      <p>
+        Edit this text directly in <code>index.html</code>.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section__head">
+      <span class="eyebrow">03 / CONTACT</span>
+      <h2>Let's talk</h2>
+    </div>
+    <div class="contact__links">
+      <a href="https://www.tiktok.com/@yourusername" target="_blank" rel="noopener" class="contact__link">
+        <span class="contact__link-label">TikTok</span>
+        <span class="contact__link-handle">@yourusername</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Your Name</span>
+  <span class="footer__dim">Built with a static site — hosted on GitHub Pages</span>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close video">×</button>
+  <video class="lightbox__video" id="lightboxVideo" controls playsinline></video>
+</div>
+
+<script src="videos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
