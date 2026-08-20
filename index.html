@@ -15,6 +15,7 @@
 <body>
 
 <div class="grain"></div>
+<canvas id="particleCanvas" class="particle-canvas"></canvas>
 
 <header class="nav">
   <div class="nav__mark">LOKMAN<span class="nav__mark-accent">_VFX</span></div>
@@ -32,10 +33,11 @@
       <span class="tc-label">TIMECODE</span>
       <span class="tc-value" id="liveTimecode">00:00:00:00</span>
     </div>
+    <div class="hero__grid-lines" aria-hidden="true"></div>
     <h1 class="hero__title">
-      <span class="hero__title-line">VISUAL</span>
-      <span class="hero__title-line hero__title-line--accent">EFFECTS</span>
-      <span class="hero__title-line">ARTIST</span>
+      <span class="hero__title-line" data-text="VISUAL">VISUAL</span>
+      <span class="hero__title-line hero__title-line--accent" data-text="EFFECTS">EFFECTS</span>
+      <span class="hero__title-line" data-text="ARTIST">ARTIST</span>
     </h1>
     <p class="hero__sub">Compositing &amp; simulation work — shot breakdowns below.</p>
     <a href="#reel" class="hero__scroll">
@@ -44,7 +46,7 @@
     </a>
   </section>
 
-  <section class="reel" id="reel">
+  <section class="reel reveal" id="reel">
     <div class="section__head">
       <span class="eyebrow">01 / SELECTED WORK</span>
       <h2>Shot Reel</h2>
@@ -52,7 +54,7 @@
     <div class="grid" id="videoGrid"><!-- injected by script.js --></div>
   </section>
 
-  <section class="about" id="about">
+  <section class="about reveal" id="about">
     <div class="section__head">
       <span class="eyebrow">02 / ABOUT</span>
       <h2>About Me</h2>
@@ -64,7 +66,7 @@
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact reveal" id="contact">
     <div class="section__head">
       <span class="eyebrow">03 / CONTACT</span>
       <h2>Let's talk</h2>
@@ -90,10 +92,10 @@
         <span class="contact__link-label">Discord</span>
         <span class="contact__link-handle">lokman13900</span>
       </div>
-      <div class="https://www.roblox.com/users/4991868057/profile" target="_blank" rel="noopener" class="contact__link">
+      <a href="https://www.roblox.com/users/4991868057/profile" target="_blank" rel="noopener" class="contact__link">
         <span class="contact__link-label">Roblox</span>
         <span class="contact__link-handle">Malik_zoro20X</span>
-      </div>
+      </a>
     </div>
   </section>
 
